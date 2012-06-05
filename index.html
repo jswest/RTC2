@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Animation</title>
+    <link href='css/style.css' rel='stylesheet' style='text/css' />
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/ui.js' type='text/javascript'></script>
+    <script src='js/coffeescript.js' type='text/javascript'></script>
+    <script src='js/konami.js.coffee' type='text/coffeescript'></script>
+    <script src='js/buttons.js.coffee' type='text/coffeescript'></script>
+    <script src='js/text_button_functions.js.coffee' type='text/coffeescript'></script>
+    <script src='js/nav_button_functions.js.coffee' type='text/coffeescript'></script>
+    <script src='js/opening_and_resize.js.coffee' type='text/coffeescript'></script>
+  </head>
+  <body>
+    <div id='hidden-text-wrapper'>
+      <header id='hidden-text-header'>
+        <hgroup>
+          <h1></h1>
+        </hgroup>
+      </header>
+      <div id='hidden-text-content'></div>
+    </div>
+    <div id='buttons-wrapper'>
+      <nav class='button' id='text-button'></nav>
+      <nav class='button' id='nav-right-button'></nav>
+      <nav class='button' id='nav-left-button'></nav>
+    </div>
+    <div class='down' id='page'>
+      <ul id='pages'>
+        <li class='page' data-ajax_url='sampletext.html' data-position='0' id='logo-page'>
+          <header id='logo-header'>
+            <hgroup id='logo-wrapper'>
+              <h1 id='logo'>RTC</h1>
+            </hgroup>
+          </header>
+        </li>
+        <li class='page' data-ajax_url='false' data-position='1' id='navigation-page'>
+          <header class='faded-logo'>
+            <h1 class='faded-logo'>RTC</h1>
+          </header>
+          <nav id='primary-nav'>
+            <ul id='primary-menu'>
+              <li data-move_position='2'></li>
+              <li data-move_position='3'></li>
+              <li data-move_position='4'></li>
+            </ul>
+          </nav>
+        </li>
+        <li class='page' data-ajax_url='false' data-position='2'>
+          <header class='faded-logo'>
+            <h1 class='faded-logo'>RTC</h1>
+          </header>
+          <nav id='portfolio-nav'>
+            <ul id='portfolio-menu'>
+              <div class='row'>
+                <li>
+                  <h2>Fracture</h2>
+                </li>
+                <li>
+                  <h2>The Collection</h2>
+                </li>
+                <li>
+                  <h2>Despierta</h2>
+                </li>
+                <li>
+                  <h2>The Voyage</h2>
+                </li>
+                <li>
+                  <h2>Concert</h2>
+                </li>
+                <li>
+                  <h2>Dust</h2>
+                </li>
+              </div>
+              <div class='row'>
+                <li>
+                  <h2>Jerusalem of Gold</h2>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </li>
+        <li class='page' data-ajax_url='false' data-position='3'>
+          <header class='faded-logo'>
+            <h1 class='faded-logo'>RTC</h1>
+          </header>
+        </li>
+        <li class='page' data-ajax_url='false' data-position='4'>
+          <header class='faded-logo'>
+            <h1 class='faded-logo'>RTC</h1>
+          </header>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

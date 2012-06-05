@@ -1,0 +1,68 @@
+<!doctype html>
+%html
+  %head
+    %title Animation
+    %link{ :rel => "stylesheet", :href => "css/style.css", :style => "text/css" }
+    %script{ :src => "js/jquery.js", :type => "text/javascript" }
+    %script{ :src => "js/ui.js", :type => "text/javascript" }
+    %script{ :src => "js/coffeescript.js", :type => "text/javascript" }
+    %script{ :src => "js/konami.js.coffee", :type => "text/coffeescript" }
+    %script{ :src => "js/buttons.js.coffee", :type => "text/coffeescript" }
+    %script{ :src => "js/text_button_functions.js.coffee", :type => "text/coffeescript" }
+    %script{ :src => "js/nav_button_functions.js.coffee", :type => "text/coffeescript" }
+    %script{ :src => "js/opening_and_resize.js.coffee", :type => "text/coffeescript" }
+  %body
+    
+    #hidden-text-wrapper
+      %header#hidden-text-header
+        %hgroup
+          %h1
+      #hidden-text-content
+    
+    #buttons-wrapper
+      %nav.button#text-button
+      %nav.button#nav-right-button
+      %nav.button#nav-left-button   
+    
+    #page.down
+      %ul#pages
+        %li#logo-page.page{ "data-position" => 0, "data-ajax_url" => "sampletext.html" }
+          %header#logo-header
+            %hgroup#logo-wrapper
+              %h1#logo RTC
+        %li#navigation-page.page{ "data-position" => 1, "data-ajax_url" => 'false' }
+          %header.faded-logo
+            %h1.faded-logo RTC
+          %nav#primary-nav
+            %ul#primary-menu
+              %li{ "data-move_position" => 2 }
+              %li{ "data-move_position" => 3 }
+              %li{ "data-move_position" => 4 }
+        %li.page{ "data-position" => 2, "data-ajax_url" => 'false' }
+          %header.faded-logo
+            %h1.faded-logo RTC
+          %nav#portfolio-nav
+            %ul#portfolio-menu
+              .row
+                %li
+                  %h2 Fracture
+                %li
+                  %h2 The Collection
+                %li
+                  %h2 Despierta
+                %li
+                  %h2 The Voyage
+                %li
+                  %h2 Concert
+                %li
+                  %h2 Dust
+              .row
+                %li
+                  %h2 Jerusalem of Gold
+        %li.page{ "data-position" => 3, "data-ajax_url" => 'false' }
+          %header.faded-logo
+            %h1.faded-logo RTC
+        %li.page{ "data-position" => 4, "data-ajax_url" => 'false' }
+          %header.faded-logo
+            %h1.faded-logo RTC
+        

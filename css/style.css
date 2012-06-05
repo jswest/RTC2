@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+div,
+nav,
+li {
+  display: block;
+  position: relative; }
+
+li {
+  float: left;
+  list-style: none; }
+
+h1,
+h2 {
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase; }
+
+h1 {
+  font-family: "Didot", "Fontaine Capel Neue"; }
+
+h2 {
+  font-family: "Arial"; }
+
+p {
+  font-family: "Adobe Garamond Pro", "Garamond", "Times", sarif;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: justify;
+  text-indent: 25px; }
+
+#page {
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 20px black;
+  -moz-box-shadow: 0px 0px 20px black;
+  -box-shadow: 0px 0px 20px black;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  #page ul#pages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; }
+    #page ul#pages li.page {
+      display: none;
+      height: 100%; }
+      #page ul#pages li.page header.faded-logo,
+      #page ul#pages li.page header#logo-header {
+        margin-top: -200px;
+        margin-left: -400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        height: 400px; }
+        #page ul#pages li.page header.faded-logo h1.faded-logo,
+        #page ul#pages li.page header.faded-logo h1#logo,
+        #page ul#pages li.page header#logo-header h1.faded-logo,
+        #page ul#pages li.page header#logo-header h1#logo {
+          font-family: "RTC Logo";
+          font-size: 400px;
+          line-height: 125%;
+          width: 800px;
+          height: 400px; }
+        #page ul#pages li.page header.faded-logo h1#logo,
+        #page ul#pages li.page header#logo-header h1#logo {
+          color: white;
+          text-shadow: 0px 0px 20px white; }
+        #page ul#pages li.page header.faded-logo h1.faded-logo,
+        #page ul#pages li.page header#logo-header h1.faded-logo {
+          color: #141414;
+          text-shadow: 0px 0px 20px #3c3c3c; }
+      #page ul#pages li.page nav#primary-nav {
+        margin-top: -100px;
+        margin-left: -400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        height: 200px; }
+        #page ul#pages li.page nav#primary-nav ul#primary-menu li {
+          background-color: white;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          -webkit-box-shadow: 0px 0px 20px white;
+          -moz-box-shadow: 0px 0px 20px white;
+          -box-shadow: 0px 0px 20px white;
+          cursor: pointer;
+          margin-left: 100px;
+          width: 200px;
+          height: 200px; }
+        #page ul#pages li.page nav#primary-nav ul#primary-menu li:first-child {
+          margin-left: 0; }
+      #page ul#pages li.page nav#portfolio-nav {
+        margin-top: -100px;
+        margin-left: -400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        height: 200px; }
+        #page ul#pages li.page nav#portfolio-nav ul#portfolio-menu .row {
+          float: left;
+          margin-bottom: 20px;
+          width: 800px; }
+        #page ul#pages li.page nav#portfolio-nav ul#portfolio-menu li {
+          background-color: white;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          -webkit-box-shadow: 0px 0px 10px white;
+          -moz-box-shadow: 0px 0px 10px white;
+          -box-shadow: 0px 0px 10px white;
+          cursor: pointer;
+          margin-left: 20px;
+          width: 100px;
+          height: 100px; }
+          #page ul#pages li.page nav#portfolio-nav ul#portfolio-menu li h2 {
+            margin-top: -10px;
+            margin-left: -50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 20px;
+            font-size: 10px; }
+        #page ul#pages li.page nav#portfolio-nav ul#portfolio-menu li:first-child {
+          margin-left: 0; }
+
+#buttons-wrapper {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  z-index: 1;
+  width: 50px; }
+  #buttons-wrapper nav.button {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    -moz-box-shadow: 0px 0px 10px white;
+    -box-shadow: 0px 0px 10px white;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px; }
+  #buttons-wrapper nav.button:first-child {
+    margin-top: 0; }
+
+#hidden-text-wrapper {
+  margin-left: -310px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 620px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  #hidden-text-wrapper header#hidden-text-header {
+    width: 620px; }
+    #hidden-text-wrapper header#hidden-text-header h1 {
+      border-bottom: 1px solid #c8c8c8;
+      border-top: 1px solid #c8c8c8;
+      font-size: 80px;
+      margin-bottom: 40px;
+      padding: 10px 0; }
+  #hidden-text-wrapper #hidden-text-content {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px; }
+    #hidden-text-wrapper #hidden-text-content p:first-child {
+      text-indent: 0; }
+    #hidden-text-wrapper #hidden-text-content p:first-child:first-letter {
+      border: 1px solid #c8c8c8;
+      float: left;
+      font-family: "Didot";
+      font-size: 80px;
+      margin-right: 10px;
+      padding: 10px; }
